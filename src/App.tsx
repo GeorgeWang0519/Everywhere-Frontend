@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import './style.css';
 import Welcome from './home';
 import BubbleCanvas from './bubbleCanvas';
+import Adverti from './adverti';
 function App() {
   return (
     <div className="App">
@@ -13,15 +15,13 @@ function App() {
       <a href="https://www.example.com">Post</a>
         <div className='Welcome-Container'><Welcome name='George'/></div>
       </header>
-      <main className="App-main">
-      <BubbleCanvas />
-      <h1 data-text="HELLO!">HELLO!</h1>
-      </main>
-
-
       <footer className="App-footer">
-        <div>I'm footer</div>
+        <Adverti />
       </footer>
+      <main className="App-main">
+        <BubbleCanvas /> 
+       <h1 data-text="JOIN US!">Join US!</h1> 
+      </main>
     </div>
   );
 }
